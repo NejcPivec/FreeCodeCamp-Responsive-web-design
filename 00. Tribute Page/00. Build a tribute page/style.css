@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap");
+
+:root {
+  --lakers-purple: #522380;
+  --lakers-gold: #f6bf2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+}
+
+body {
+  font-family: "Antic Slab", serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar */
+header {
+  background-color: var(--lakers-purple);
+}
+
+.logo {
+  width: 50px;
+}
+
+header li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: border-bottom 1s;
+}
+
+header li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hero section */
+h1 {
+  margin-bottom: 20px;
+}
+
+.main-link {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.tribute-link {
+  color: var(--lakers-gold);
+}
+
+.about-right {
+  width: 100%;
+  padding: 50px;
+}
+
+.about-right img {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  display: block;
+}
+
+/* Video section */
+.videos {
+  background-color: var(--lakers-gold);
+  padding: 10px 0;
+}
+
+.videos iframe {
+  width: 400px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--lakers-purple);
+  padding: 20px;
+}
+
+footer ul li a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}

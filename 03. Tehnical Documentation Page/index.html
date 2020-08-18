@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tehnical Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <a href="#Introduction_to_Python" class="nav-link"
+        >Introduction to Python</a
+      >
+      <a href="#Hello_World" class="nav-link">Hello World</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+      <a href="#Arrays" class="nav-link">Arrays</a>
+      <a href="#Libraries" class="nav-link">Libraries</a>
+      <a href="#See_Also" class="nav-link">See Also</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Python">
+        <header>Introduction to Python</header>
+        <p>
+          Python is an interpreted, high-level, general-purpose programming
+          language. Created by Guido van Rossum and first released in 1991,
+          Python's design philosophy emphasizes code readability with its
+          notable use of significant whitespace. Its language constructs and
+          object-oriented approach aim to help programmers write clear, logical
+          code for small and large-scale projects.
+        </p>
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>
+          To get started with writing Python, open the Scratchpad and write your
+          first "Hello world" Python code:
+        </p>
+        <code>print("Hello, World!")</code>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          A function is a block of code which only runs when it is called.
+        </p>
+        <p>
+          You can pass data, known as parameters, into a function.
+        </p>
+        <p>
+          A function can return data as a result.
+        </p>
+        <p>
+          To call a function, use the function name followed by parenthesis:
+        </p>
+        <code
+          >def my_function(): print("Hello from a function") my_function()
+        </code>
+      </section>
+
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <p>
+          There are four collection data types in the Python programming
+          language:
+        </p>
+        <ul>
+          <li>
+            List is a collection which is ordered and changeable. Allows
+            duplicate members.
+          </li>
+          <li>
+            Tuple is a collection which is ordered and unchangeable. Allows
+            duplicate members.
+          </li>
+          <li>
+            Set is a collection which is unordered and unindexed. No duplicate
+            members.
+          </li>
+          <li>
+            Dictionary is a collection which is unordered, changeable and
+            indexed. No duplicate members.
+          </li>
+          <li>
+            They are cool.
+          </li>
+        </ul>
+        <p>
+          When choosing a collection type, it is useful to understand the
+          properties of that type. Choosing the right type for a particular data
+          set could mean retention of meaning, and, it could mean an increase in
+          efficiency or security.
+        </p>
+        <code>thislist = ["apple", "banana", "cherry"] print(thislist)</code>
+        <code
+          >thislist = ["apple", "banana", "cherry"] for x in thislist:
+          print(x)</code
+        >
+      </section>
+
+      <section class="main-section" id="Libraries">
+        <header>Libraries</header>
+        <p>
+          A package contains all the files you need for a module. Modules are
+          Python code libraries you can include in your project.
+        </p>
+        <code>pip install camelcase</code>
+      </section>
+
+      <section class="main-section" id="See_Also">
+        <header>See Also</header>
+        <p>
+          For more about python check
+          <a href="https://www.w3schools.com/python/default.asp"
+            >Python Course</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

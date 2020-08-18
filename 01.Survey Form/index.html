@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="showcase">
+      <div class="video-container">
+        <video src="./src//video.mp4" autoplay muted loop></video>
+      </div>
+      <div class="content">
+        <h1 id="title">Basketball Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to anwser few simple questions
+        </p>
+        <form id="survey-form" class="survey-group">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="form-control"
+            />
+          </div>
+
+            <div class="form-group">
+              <label for="number" id="number-label"
+                >Age <span class="small">(Optional)</span></label
+              >
+              <input
+                type="number"
+                name="number"
+                id="number"
+                min="10"
+                max="60"
+                placeholder="Age"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="dropdown" id="dropdown-label">Favorite Team</label>
+              <select
+                name="dropdown"
+                id="dropdown"
+                class="form-control"
+                required
+              >
+                <option disabled selected value>-</option>
+                <option value="lakers">Los Angeles Lakers</option>
+                <option value="dallas">Dallas Mavericks</option>
+                <option value="clippers">Los Angeles Clippers</option>
+                <option value="heat">Miami Heath</option>
+                <option value="bulls">Chicago Bulls</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <p class="mvp-text">Select who is your MVP favorite</p>
+              <input
+                type="radio"
+                id="lebron"
+                name="mvp-race"
+                value="lebron"
+                class="input-radio"
+              />
+              <label class="mvp-label" for="lebron">Lebron James</label><br />
+              <input
+                type="radio"
+                id="giannis"
+                name="mvp-race"
+                value="giannis"
+                class="input-radio"
+              />
+              <label class="mvp-label" for="giannis">Giannis Antetokounmpo</label><br />
+              <input
+                type="radio"
+                id="luka"
+                name="mvp-race"
+                value="luka"
+                class="input-radio"
+              />
+              <label class="mvp-label" for="luka">Luka Dončič</label><br />
+            </div>
+
+            <div class="form-group flex">
+              <p class="mvp-text">
+                What is your favorite after game media?
+                <span class="small">(Check all that apply)</span>
+              </p>
+
+              <label class="checkbox-label"
+                ><input
+                  name="media"
+                  value="top10"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Top 10</label
+              >
+              <label class="checkbox-label"
+                ><input
+                  name="media"
+                  value="higlights"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Highlights</label
+              >
+              <label class="checkbox-label"
+                ><input
+                  name="media"
+                  value="analyst"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Analyst</label
+              >
+              <label class="checkbox-label"
+                ><input
+                  name="media"
+                  value="predictions"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Predictions</label
+              >
+              <label class="checkbox-label"
+                ><input
+                  name="review"
+                  value="analyst"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Review</label
+              >
+            </div>
+
+            <div class="form-group flex">
+              <label for="comments" class="comments">Any comments or suggestions?</label>
+
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="50"
+                placeholder="Enter your comments here..."
+                class="input-textarea"
+              >
+              </textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

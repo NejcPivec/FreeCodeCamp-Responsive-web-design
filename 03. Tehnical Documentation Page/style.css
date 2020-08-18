@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #eee;
+  display: flex;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  border-right: 1px solid #000;
+  background-color: #efefef;
+}
+
+nav header {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 20px;
+}
+
+nav a {
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #000;
+}
+
+nav a:last-child {
+  border-bottom: 1px solid #000;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Document */
+main {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+main header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+}
+
+#functions p,
+#arrays p {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+#also a {
+  font-weight: 600;
+  background-color: #fff;
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    border-right: none;
+    background-color: #efefef;
+  }
+}

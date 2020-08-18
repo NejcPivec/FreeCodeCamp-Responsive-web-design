@@ -1,0 +1,16 @@
+// Smoth scrolling
+$("#nav-bar a, .nav-link").on("click", function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    // hash = href="#home"
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 100,
+      },
+      800
+    );
+  }
+});
